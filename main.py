@@ -12,4 +12,4 @@ def Indexx():
     return {'data':{'name':'nikhil'}}
 
 def about_page():
-    return {"data":"This is my about page"}
+    return {"data":"This is my about pages"}
