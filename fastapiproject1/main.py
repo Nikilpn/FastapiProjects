@@ -31,12 +31,3 @@ def about_page():
 @app.get('about/same')
 def about_page():
     return {"data":"this iis also my about Page"}
-
-# print("hwlli")
-# one=[1,23,4]
-# for i in one:
-#     if i==1:
-#         print("we got one")
-
-#     if i==4:
-#         print("i is 4")
