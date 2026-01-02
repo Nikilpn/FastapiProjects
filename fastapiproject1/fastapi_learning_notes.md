@@ -18,9 +18,28 @@ pip3 install fastapi
 pip3 install uvicorn
 
 
-----uvicorn--runserver
+----uvicorn--runserver---------------------------------------------------------
+
+run in port 8000 default
+------------------
 
 uvicorn main:app --reload
+
+run in another port 9000
+
+run another python file which is located in another folder for example there is a blog folder and we have a main file in there for running it 
+
+uvicorn blog.main:app --reload
+
+--------------------------
+
+
+if __name__=="__main__":
+    uvicorn.run(app,host='127.0.0.1',port=9000)
+
+
+run--->python3 main.py
+---------------------------------------------------------------------------------
 
 
 ________________________
@@ -35,3 +54,24 @@ http://127.0.0.1:8000/docs
 
 http://127.0.0.1:8000/redoc
 
+
+-__________________
+debug fastapi
+_________________
+ctrl+shift+p---select debug
+add breakpoint
+run swagger apply varialble in data
+choose debug in  vs code
+---------------------
+
+
+__________connecting to database______________________
+first step:make schemas.py
+make models.py
+and connect it 
+
+step2:fastapi need sqlAlchemy
+
+    pip install SQLAlchemy
+
+make database.py
