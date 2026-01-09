@@ -26,13 +26,14 @@ run in port 8000 default
 uvicorn main:app --reload
 
 run in another port 9000
+uvicorn blog.main:app --reload --port 9000
 
 run another python file which is located in another folder for example there is a blog folder and we have a main file in there for running it 
 
 uvicorn blog.main:app --reload
 
 --------------------------
-
+run in another port 9000
 
 if __name__=="__main__":
     uvicorn.run(app,host='127.0.0.1',port=9000)
